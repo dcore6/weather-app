@@ -59,7 +59,7 @@ body {
     width: 70%;
     background-position-y: center;
     background-position-x: 5px;
-    background-image: url(/img/search.png);
+    background-image: url(img/search.png);
     background-repeat: no-repeat;
     text-indent: 40px;
     font-size: 15px;
