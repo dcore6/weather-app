@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/rain.png">
+    <link rel="stylesheet" href="style.css">
+    <title>weather.io</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navigation">
+            <div class="location-container">
+                <div class="gps-container">
+                    <img
+                    src="/img/gps.png"
+                    class="gps-icon">
+                </div>
+                <input
+                    type="text"
+                    placeholder="Enter your location"
+                    class="city-name">
+                <button class="check-weather">FIND</button>
+            </div>
+
+            <div class="time">
+                <h2 class="month-year"></h2>
+                <p class="week-day"></p>
+            </div>
+        </nav>
+
+        <main class="app">
+            <div class="main-temp">
+                <div class="main-temp-content">
+                    <h2 class="location">Oslo, Norway</h2>
+                    <p class="temp">14°</p>
+                    <p class="feeling-temp">Odczucie 10°</p>
+                    <img
+                    src=""
+                    style="width: 100px"
+                    class="main-weather-icon">
+                    <p class="description">Clouds</p>
+                </div>
+                <div class="forecast-container">
+                    <div class="first-day">
+                        <p class="temp-day"></p>
+                        <img
+                        src="/img/rain.png"
+                        class="weather-icon">
+                        <p class="date"></p>
+                    </div>
+
+                    <div class="second-day">
+                        <p class="temp-day"></p>
+                        <img
+                        src="/img/rain.png"
+                        class="weather-icon">
+                        <p class="date"></p>
+                    </div>
+
+                    <div class="third-day">
+                        <p class="temp-day"></p>
+                        <img
+                        src="/img/rain.png"
+                        class="weather-icon">
+                        <p class="date"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-info">
+              <div class="humidity">
+                <div class="img-container">
+                    <img
+                    src="/img/humidity.svg">
+                </div>
+                <div class="details-container">
+                    <h2>Humidity</h2>
+                    <p></p>
+                </div>
+                <!-- <img src="/img/humidity.svg"> -->
+              </div>
+
+              <div class="pressure">
+                <div class="img-container">
+                    <img
+                    src="/img/pressure.svg">
+                </div>
+                <div class="details-container">
+                    <h2>Pressure</h2>
+                    <p></p>
+                </div>
+                <!-- <img src="/img/pressure.svg"> -->
+              </div>
+
+              <div class="wind-speed">
+                <div class="img-container">
+                    <img
+                    src="/img/wind-speed.svg">
+                </div>
+                <div class="details-container">
+                    <h2>Wind speed</h2>
+                    <p></p>
+                </div>
+                <!-- <img src="/img/wind-speed.svg"> -->
+              </div>
+
+              <div class="wind-direction">
+                <div class="img-container">
+                    <img src="/img/wind-direction.svg">
+                </div>
+                <div class="details-container">
+                    <h2>Wind direction</h2>
+                    <p></p>
+                </div>
+                <!-- <img src="/img/wind-direction.svg"> -->
+              </div>
+            </div>
+            <div class="chart">
+
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
